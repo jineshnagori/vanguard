@@ -1,0 +1,221 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #010101;
+    --tertiary-color: #2155ff;
+}
+
+::selection {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: 'League Spartan', sans-serif;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.mr-2 {
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 400 !important;
+}
+
+a:hover {
+    color: var(--secondary-color) !important;
+}
+
+button,
+a {
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+input,
+textarea {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .m-hide {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .p-hide {
+        display: none !important;
+    }
+
+    .ppr-10 {
+        padding-right: 10rem;
+    }
+
+    .ppl-10 {
+        padding-left: 10rem;
+    }
+}
+
+/* hero carousel */
+#sync1 {
+    position: relative;
+}
+
+#sync2 {
+    position: absolute;
+    bottom: 0;
+}
+
+#sync1 .item {
+    height: 100vh;
+}
+
+#sync1 .item img {
+    height: 100%;
+    /* max-width: none; */
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+}
+
+#sync1 .owl-item.active .item img {
+    transform: scale(1.1);
+    transition: transform 5s ease;
+}
+
+#sync2 .item {
+    padding: 10px 0px;
+    margin: 50px 100px;
+    color: #acacac;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#sync2 .item .content {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #sync2 .item {
+        margin: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #sync2 .item {
+        margin: 20px 50px;
+    }
+}
+
+#sync2 .current .item {
+    color: var(--primary-color);
+}
+
+#sync2 .current .item .progress {
+    background: transparent;
+    height: 0.5rem;
+    position: relative;
+}
+
+#sync2 .current .item .progress::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0%;
+    background-color: var(--tertiary-color);
+    animation: progress-bar 5s ease-out forwards;
+}
+
+@keyframes progress-bar {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+#sync2 .item .progress {
+    background: transparent;
+    height: 0.5rem;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    transition: all 0.3s ease;
+}
+
+#sync1.owl-theme {
+    position: relative;
+}
+
+#sync1.owl-theme .owl-next,
+#sync1.owl-theme .owl-prev {
+    width: 22px;
+    height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    top: 50%;
+}
+
+#sync1.owl-theme .owl-prev {
+    left: 10px;
+}
+
+#sync1.owl-theme .owl-next {
+    right: 10px;
+}
