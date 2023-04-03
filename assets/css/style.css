@@ -138,12 +138,12 @@ textarea {
     .collapse>.p-hide {
         position: absolute;
         padding: 0;
-        right: 10px;
+        right: 20px;
         top: 10px;
     }
 
     .navbar-nav {
-        margin-top: 2rem;
+        margin-top: 2.5rem;
     }
 
     .navbar-collapse.collapsing {
@@ -156,7 +156,8 @@ textarea {
         height: 100%;
         left: 0;
         transition: left 400ms ease-in-out;
-        z-index: 2;
+        z-index: 99;
+        width: 25rem;
     }
 
     .navbar-toggler.collapsed~.navbar-collapse {
@@ -198,7 +199,7 @@ nav {
 .nav-item {
     cursor: pointer;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     color: var(--secondary-color);
 }
@@ -509,4 +510,10 @@ nav {
 
 .help-box .title-btn {
     margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .help-box .title {
+        margin-top: 2rem;
+    }
 }
