@@ -1,7 +1,7 @@
 :root {
     --primary-color: #ffffff;
     --secondary-color: #010101;
-    --tertiary-color: #2155ff;
+    --tertiary-color: #043576;
 }
 
 ::selection {
@@ -46,9 +46,13 @@ h6 {
     margin-right: 0.5rem;
 }
 
+i {
+    color: var(--secondary-color);
+}
+
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     h2 {
@@ -62,17 +66,17 @@ h6 {
 
 p {
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 a {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: 400 !important;
 }
 
 a:hover {
-    color: var(--secondary-color) !important;
+    color: var(--primary-color);
 }
 
 button,
@@ -109,9 +113,132 @@ textarea {
     }
 }
 
-/* hero carousel */
-#sync1 {
+/* NavBar */
+@media screen and (min-width: 991px) {
+    nav {
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .m-menu>button {
+        padding: 0;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: var(--primary-color);
+        padding: 1rem;
+        box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.7),
+            -5px 0 5px -5px rgba(0, 0, 0, 0.7);
+    }
+
+    .collapse>.p-hide {
+        position: absolute;
+        padding: 0;
+        right: 10px;
+        top: 10px;
+    }
+
+    .navbar-nav {
+        margin-top: 2rem;
+    }
+
+    .navbar-collapse.collapsing {
+        height: 100%;
+        left: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        height: 100%;
+        left: 0;
+        transition: left 400ms ease-in-out;
+        z-index: 2;
+    }
+
+    .navbar-toggler.collapsed~.navbar-collapse {
+        transition: left 400ms ease-in;
+    }
+}
+
+nav {
+    padding: 15px;
     position: relative;
+}
+
+.m-menu i {
+    font-size: 30px;
+}
+
+.help-icon i {
+    font-size: 30px;
+}
+
+.help-details p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-left: 10px;
+}
+
+.help-details a:hover {
+    text-decoration: underline !important;
+}
+
+.menu-item {
+    cursor: pointer;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.nav-item {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.nav-item>a {
+    color: var(--secondary-color);
+}
+
+.menu-item>p:hover {
+    color: var(--tertiary-color);
+}
+
+.menu {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.menu-item>a>p {
+    margin-bottom: 0;
+    color: var(--secondary-color);
+}
+
+/* hero carousel */
+.hero {
+    position: relative;
+}
+
+.owl-text-overlay {
+    margin: 0 25rem 0 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    color: var(--primary-color);
+}
+
+.owl-text-overlay h6 {
+    font-weight: 700;
 }
 
 #sync2 {
@@ -120,7 +247,13 @@ textarea {
 }
 
 #sync1 .item {
-    height: 100vh;
+    height: 90vh;
+}
+
+@media screen and (max-width: 768px) {
+    #sync1 .item {
+        height: 80vh;
+    }
 }
 
 #sync1 .item img {
@@ -152,11 +285,17 @@ textarea {
     #sync2 .item {
         margin: 20px 10px;
     }
+    .owl-text-overlay {
+        margin: 0 10px;
+    }
 }
 
 @media screen and (max-width: 991px) {
     #sync2 .item {
-        margin: 20px 50px;
+        margin: 20px 25px;
+    }
+    .owl-text-overlay {
+        margin: 0 100px 0 25px;
     }
 }
 
@@ -183,12 +322,13 @@ textarea {
 
 @keyframes progress-bar {
     from {
-      width: 0%;
+        width: 0%;
     }
+
     to {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
 
 #sync2 .item .progress {
     background: transparent;
