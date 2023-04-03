@@ -170,6 +170,12 @@ nav {
     position: relative;
 }
 
+@media screen and (min-width: 992px) {
+    nav {
+        padding: 0.8rem 5rem;
+    }
+}
+
 .m-menu i {
     font-size: 30px;
 }
@@ -358,6 +364,46 @@ nav {
 
 #sync1.owl-theme .owl-next {
     right: 10px;
+}
+
+/* img content */
+.img-content .bg-img1 {
+    background-image: url(../images/5.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.img-content .bg-img2 {
+    background-image: url(../images/6.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+@media screen and (min-width: 992px) {
+    .img-content .content {
+        padding: 5rem 10rem 5rem 5rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .img-content .content {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img-content .content {
+        padding: 1rem;
+    }
+    .m-column-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .img-hide {
+        display: none !important;
+    }
 }
 
 /* footer */
