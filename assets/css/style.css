@@ -17,6 +17,11 @@ body {
     max-width: 100%;
 }
 
+hr {
+    margin: 0;
+    color: #acacac;
+}
+
 ul {
     margin: 0px;
     padding: 0px;
@@ -168,6 +173,7 @@ textarea {
 nav {
     padding: 15px;
     position: relative;
+    border-bottom: 1px solid #acacac;
 }
 
 @media screen and (min-width: 992px) {
@@ -383,17 +389,26 @@ nav {
     .img-content .content {
         padding: 5rem 10rem 5rem 5rem;
     }
+    .contact-content .content {
+        padding: 2.5rem 5rem;
+    }
 }
 
 @media screen and (max-width: 991px) {
     .img-content .content {
         padding: 2rem;
     }
+    .contact-content .content {
+        padding: 1rem 2rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .img-content .content {
         padding: 1rem;
+    }
+    .contact-content .content {
+        padding: 0.5rem 1rem;
     }
     .m-column-reverse {
         flex-direction: column-reverse;
@@ -562,4 +577,48 @@ nav {
     .help-box .title {
         margin-top: 2rem;
     }
+}
+
+/* contact-form */
+.contact-input {
+    display: grid;
+    margin-bottom: 20px;
+}
+
+.contact-input label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #656565;
+}
+
+.contact-input label>span {
+    color: #ff0000;
+}
+
+.contact-input input, .contact-input textarea {
+    margin-top: 5px;
+    padding: 0.5rem;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.contact-btn {
+    margin: 2rem 0;
+}
+
+.contact-btn a {
+    padding: 1.25rem 2rem;
+    text-align: center;
+    border: 1px solid var(--tertiary-color);
+    background: var(--tertiary-color);
+    color: var(--primary-color);
+    width: 100%;
+    display: block;
+}
+
+.contact-btn a:hover {
+    background: transparent;
+    color: var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
 }
