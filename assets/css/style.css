@@ -594,7 +594,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
     color: var(--primary-color);
     text-align: center;
 }
@@ -622,6 +621,12 @@ nav {
 @media screen and (max-width: 768px) {
     .help-box .title {
         margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .help-box {
+        height: 40vh;
     }
 }
 
