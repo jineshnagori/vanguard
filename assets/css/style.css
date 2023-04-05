@@ -140,15 +140,8 @@ textarea {
             -5px 0 5px -5px rgba(0, 0, 0, 0.7);
     }
 
-    .collapse>.p-hide {
-        position: absolute;
-        padding: 0;
-        right: 15px;
-        top: 10px;
-    }
-
     .navbar-nav {
-        margin-top: 2.5rem;
+        margin-top: 1.5rem;
     }
 
     .navbar-collapse.collapsing {
@@ -168,6 +161,12 @@ textarea {
     .navbar-toggler.collapsed~.navbar-collapse {
         transition: left 400ms ease-in;
     }
+}
+
+.navbar-toggler {
+    padding: 0;
+    align-items: center;
+    display: flex;
 }
 
 nav {
