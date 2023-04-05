@@ -278,6 +278,8 @@ nav {
 .menu-item>a>p {
     margin-bottom: 0;
     color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 /* hero carousel */
@@ -324,7 +326,7 @@ nav {
 
 #sync1 .owl-item.active .item img {
     transform: scale(1.1);
-    transition: transform 5s ease;
+    transition: transform 10s ease;
 }
 
 #sync2 .item {
@@ -427,6 +429,18 @@ nav {
 
 .img-content .bg-img2 {
     background-image: url(../images/6.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.img-content .bg-img3 {
+    background-image: url(../images/7.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.img-content .bg-img4 {
+    background-image: url(../images/8.jpg);
     background-position: center center;
     background-size: cover;
 }
