@@ -12,6 +12,12 @@
     margin: 0 25rem 0 100px;
 }
 
+@media screen and (min-width: 992px){
+    .img-content .content {
+        padding: 1rem 10rem 5rem 5rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .owl-text-overlay {
         margin: 0 20px;
@@ -21,4 +27,5 @@
 .content h4 {
     line-height: 2;
     letter-spacing: 1px;
+    margin-top: 20px;
 }
