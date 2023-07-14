@@ -261,8 +261,8 @@ nav {
 }
 
 .nav-item>a>p {
-    font-weight: 400;
-    font-size: 1.3rem;
+    font-weight: 400 !important;
+    font-size: 1.3rem !important;
 }
 
 .nav-item>a:hover, .nav-item>i:hover {
