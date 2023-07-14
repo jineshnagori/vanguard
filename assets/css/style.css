@@ -260,6 +260,11 @@ nav {
     color: var(--secondary-color);
 }
 
+.nav-item>a>p {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
 .nav-item>a:hover, .nav-item>i:hover {
     color: var(--tertiary-color);
     font-weight: 600;
@@ -307,12 +312,12 @@ nav {
 }
 
 #sync1 .item {
-    height: 90vh;
+    height: 90dvh;
 }
 
 @media screen and (max-width: 768px) {
     #sync1 .item {
-        height: 80vh;
+        height: 80dvh;
     }
 }
 
@@ -597,7 +602,7 @@ nav {
 
 /* error page */
 .error-section {
-    height: 60vh;
+    height: 60dvh;
     display: flex;
     align-items: center;
 }
@@ -640,7 +645,7 @@ nav {
 
 @media screen and (min-width: 450px) {
     .help-box {
-        height: 40vh;
+        height: 40dvh;
     }
 }
 
