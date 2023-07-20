@@ -312,12 +312,12 @@ nav {
 }
 
 #sync1 .item {
-    height: 90dvh;
+    height: 90vh;
 }
 
 @media screen and (max-width: 768px) {
     #sync1 .item {
-        height: 80dvh;
+        height: 80vh;
     }
 }
 
@@ -602,7 +602,7 @@ nav {
 
 /* error page */
 .error-section {
-    height: 60dvh;
+    height: 60vh;
     display: flex;
     align-items: center;
 }
@@ -645,7 +645,7 @@ nav {
 
 @media screen and (min-width: 450px) {
     .help-box {
-        height: 40dvh;
+        height: 40vh;
     }
 }
 

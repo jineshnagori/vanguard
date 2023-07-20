@@ -1,5 +1,5 @@
 #sync1 .item {
-    height: 70dvh;
+    height: 70vh;
 }
 
 @media screen and (min-width: 992px){
@@ -55,7 +55,7 @@
         top: 75%;
     }
     #sync1 .item {
-        height: 30dvh;
+        height: 30vh;
     }
     .digital-hero {
         background: var(--primary-color);
